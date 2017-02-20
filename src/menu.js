@@ -1,9 +1,10 @@
 import { observable } from 'mobx';
 
 export default observable({
+  user: true,
   markdown: false,
   nestedFields: false,
-  registerMaterial: true,
+  registerMaterial: false,
   registerSimple: false,
   companyWidgets: false,
   companySimple: false,

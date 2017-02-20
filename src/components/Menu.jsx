@@ -33,6 +33,7 @@ export default observer(({ menu }) => (
     <span className="left label">SELECT DEMO:</span>
     <span className="left">
       <select name="menu" onChange={switchTo(menu)} defaultValue={selected(menu)}>
+        <option value="user">User</option>
         <option value="registerMaterial">Register (Material UI)</option>
         <option value="registerSimple">Register (Simple)</option>
         <option value="companyWidgets">Company (React Widgets)</option>

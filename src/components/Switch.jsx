@@ -1,6 +1,7 @@
 import React from 'react';
 import { observer } from 'mobx-react';
 
+import FormUser from './forms/FormUser';
 import FormMarkdown from './forms/FormMarkdown';
 import FormWithNestedFields from './forms/FormWithNestedFields';
 import FormRegisterMaterial from './forms/FormRegisterMaterial';
@@ -10,6 +11,9 @@ import FormCompanySimple from './forms/FormCompanySimple';
 
 export default observer(({ menu, forms }) => {
   switch (true) {
+
+    case menu.user:
+      return (<FormUser form={forms.user} />);
 
     case menu.markdown:
       return (<FormMarkdown form={forms.markdown} />);
